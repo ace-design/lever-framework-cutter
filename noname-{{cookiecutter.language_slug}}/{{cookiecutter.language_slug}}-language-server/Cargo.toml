@@ -1,0 +1,9 @@
+[package]
+name = "{{cookiecutter.language_slug}}-language-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ls_framework = { git = "https://github.com/ace-design/noname" }
+tokio = "1.29.1"
+tree-sitter-{{cookiecutter.language_slug}} = { path ="../tree-sitter-{{cookiecutter.language_slug}}"}

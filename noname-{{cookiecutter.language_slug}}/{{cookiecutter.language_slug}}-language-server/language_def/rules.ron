@@ -1,0 +1,26 @@
+LanguageDefinition (
+    language: (
+        name: "{{cookiecutter.language_slug}}",
+        file_extensions: [ "{{cookiecutter.file_extension}}" ]
+    ),
+    keywords: [ 
+        "if", 
+        "else" 
+    ],
+    symbol_types: [
+        (name: "Variable", completion_type: Variable, highlight_type: Variable),
+    ],
+    global_ast_rules: [
+        (query: Kind("comment"), rule: Direct(Node("Comment")), highlight_type: Comment),
+    ],
+    ast_rules: [
+        Rule(
+            node_name: "Root", // Name of Rule (required)
+            is_scope: true, // defaults to false
+            children: [
+                // ...
+            ]
+        ),
+    ]
+)
+

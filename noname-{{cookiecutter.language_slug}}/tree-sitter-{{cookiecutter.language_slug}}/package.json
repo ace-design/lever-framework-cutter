@@ -1,0 +1,26 @@
+{
+    "name": "tree-sitter-{{cookiecutter.language_slug}}",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bindings/node",
+    "scripts": {
+        "test": "tree-sitter test"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "nan": "^2.17.0"
+    },
+    "tree-sitter": [
+        {
+            "scope": "source.{{cookiecutter.language_slug}}",
+            "injection-regex": "{{cookiecutter.language_slug}}",
+            "file-types": [
+                "{{cookiecutter.language_slug}}"
+            ]
+        }
+    ],
+    "devDependencies": {
+        "tree-sitter-cli": "^0.20.8"
+    }
+}
