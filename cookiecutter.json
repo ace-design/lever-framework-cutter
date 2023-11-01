@@ -3,5 +3,5 @@
     "language_slug": "{{ cookiecutter.language_name.lower().replace(' ', '-').replace('_', '-') }}",
     "file_extension": "{{ cookiecutter.language_slug }}",
     "author": "",
-    "publisher": "{{ cookiecutter.author }}",
+    "publisher": "{{ cookiecutter.author }}"
 }
