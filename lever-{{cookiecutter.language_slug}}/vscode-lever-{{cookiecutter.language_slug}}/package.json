@@ -1,6 +1,6 @@
 {
-	"name": "noname-{{cookiecutter.language_slug}}",
-	"displayName": "NoName for {{cookiecutter.language_name}}",
+	"name": "lever-{{cookiecutter.language_slug}}",
+	"displayName": "Lever Framework implementation for {{cookiecutter.language_name}}",
 	"description": "Language support for {{cookiecutter.language_name}}.",
 	"author": "{{cookiecutter.author}}",
 	"license": "MIT",
@@ -10,7 +10,7 @@
 	"keywords": [
 		"{{cookiecutter.language_name}}",
 		"{{cookiecutter.language_slug}}",
-        "noname"
+        "lever"
 	],
 	"engines": {
 		"vscode": "^1.75.0"
@@ -38,15 +38,15 @@
 		],
 		"configuration": {
 			"type": "object",
-			"title": "NoName for {{cookiecutter.language_name}}",
+			"title": "Lever Framework implementation for {{cookiecutter.language_name}}",
 			"properties": {
-				"noname-{{cookiecutter.language_slug}}.language_server.path": {
+				"lever-{{cookiecutter.language_slug}}.language_server.path": {
 					"scope": "resource",
 					"type": "string",
 					"description": "Path to language server executable.",
 					"format": "path"
 				},
-				"noname-{{cookiecutter.language_slug}}.trace.server": {
+				"lever-{{cookiecutter.language_slug}}.trace.server": {
 					"scope": "window",
 					"type": "string",
 					"enum": [

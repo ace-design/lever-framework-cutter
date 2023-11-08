@@ -1,5 +1,5 @@
 {
-	"name": "noname-{{cookiecutter.language_slug}}-client",
+	"name": "lever-{{cookiecutter.language_slug}}-client",
 	"description": "VSCode client for the language server",
 	"author": "{{cookiecutter.author}}",
 	"license": "MIT",

@@ -13,7 +13,7 @@ import {
 let client: LanguageClient;
 
 export async function activate(context: ExtensionContext) {
-    const lspConfig = workspace.getConfiguration("noname-{{cookiecutter.language_slug}}.language_server", null);
+    const lspConfig = workspace.getConfiguration("lever-{{cookiecutter.language_slug}}.language_server", null);
     let bin_path = lspConfig.get<string | null>("path", null);
 
     if (!bin_path) {
