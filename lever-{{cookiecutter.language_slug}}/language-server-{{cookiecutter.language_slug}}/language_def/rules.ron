@@ -11,7 +11,7 @@ LanguageDefinition (
         (name: "Variable", completion_type: Variable, highlight_type: Variable),
     ],
     global_ast_rules: [
-        (query: Kind("comment"), rule: Direct(Node("Comment")), highlight_type: Comment),
+        (query: Kind("comment"), rule: Direct("Comment"), highlight_type: Comment),
     ],
     ast_rules: [
         Rule(
